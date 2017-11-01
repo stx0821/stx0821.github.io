@@ -1,10 +1,10 @@
-<style>
-blockquote{font-size:16px;}
-</style>
+
 # CEX API DOCUMENT
 
 ## 获取币种汇率
+
 > GET /Api/bitfinex_ticker
+
 ### 参数说明
 无
 ### 返回值说明
