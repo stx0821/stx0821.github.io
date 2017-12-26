@@ -5,14 +5,19 @@
   
 
   
-  <title>Archiv | 梅天能－MyBlog</title>
+  <title>Linux学习笔记 | 梅天能－MyBlog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="梅天能－MyBlog">
-<meta property="og:url" content="http://yoursite.com/archives/index.html">
+  <meta name="description" content="VMware 使用桥接时，会占用局域网IP，NAT不会，host only不能连网 递归创建目录mkdir -p dir/b，rmdir并不怎么使用，删除目录使用rm -rf dir/ 移动、重命名目录不需要额外的参数 mv 复制目录需要cp -r，如果需要连目录的修改时间等属性一起复制cp -a，复制出来的就会和源一模一样 不推荐使用硬链接，使用软链接时，必须使用绝对路径，windows的Doc">
+<meta name="keywords" content="Linux">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Linux学习笔记">
+<meta property="og:url" content="http://yoursite.com/2016/10/05/linux-e5-ad-a6-e4-b9-a0-e7-ac-94-e8-ae-b0/index.html">
 <meta property="og:site_name" content="梅天能－MyBlog">
+<meta property="og:description" content="VMware 使用桥接时，会占用局域网IP，NAT不会，host only不能连网 递归创建目录mkdir -p dir/b，rmdir并不怎么使用，删除目录使用rm -rf dir/ 移动、重命名目录不需要额外的参数 mv 复制目录需要cp -r，如果需要连目录的修改时间等属性一起复制cp -a，复制出来的就会和源一模一样 不推荐使用硬链接，使用软链接时，必须使用绝对路径，windows的Doc">
+<meta property="og:updated_time" content="2017-12-26T03:09:34.768Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="梅天能－MyBlog">
+<meta name="twitter:title" content="Linux学习笔记">
+<meta name="twitter:description" content="VMware 使用桥接时，会占用局域网IP，NAT不会，host only不能连网 递归创建目录mkdir -p dir/b，rmdir并不怎么使用，删除目录使用rm -rf dir/ 移动、重命名目录不需要额外的参数 mv 复制目录需要cp -r，如果需要连目录的修改时间等属性一起复制cp -a，复制出来的就会和源一模一样 不推荐使用硬链接，使用软链接时，必须使用绝对路径，windows的Doc">
   
     <link rel="alternate" href="/atom.xml" title="梅天能－MyBlog" type="application/atom+xml">
   
@@ -59,226 +64,101 @@
   </div>
 </header>
       <div class="outer">
-        <section id="main">
-  
-  
-    
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2017" class="archive-year">2017</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2017/12/26/Hello/" class="archive-article-date">
-  <time datetime="2017-12-26T03:07:06.000Z" itemprop="datePublished">Dec 26</time>
+        <section id="main"><article id="post-linux-e5-ad-a6-e4-b9-a0-e7-ac-94-e8-ae-b0" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2016/10/05/linux-e5-ad-a6-e4-b9-a0-e7-ac-94-e8-ae-b0/" class="article-date">
+  <time datetime="2016-10-05T02:29:06.000Z" itemprop="datePublished">2016-10-05</time>
 </a>
-      
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/日志/">日志</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/12/26/Hello/">Hello</a>
+    <h1 class="article-title" itemprop="name">
+      Linux学习笔记
     </h1>
   
 
-    </header>
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>VMware 使用桥接时，会占用局域网IP，NAT不会，host only不能连网</p>
+<p>递归创建目录mkdir -p dir/b，rmdir并不怎么使用，删除目录使用rm -rf dir/</p>
+<p>移动、重命名目录不需要额外的参数 mv</p>
+<p>复制目录需要cp -r，如果需要连目录的修改时间等属性一起复制cp -a，复制出来的就会和源一模一样</p>
+<p>不推荐使用硬链接，使用软链接时，必须使用绝对路径，windows的Documents and Settings和Users使用的应该是联接mklink /J link target</p>
+<p>updatedb命令用于更新locate搜索的数据库，搜索规则的配置文件在/etc/updatedb.conf</p>
+<p>find / -iname ab.txt</p>
+<p>find / -mtime -10</p>
+<p>find / -size 10M</p>
+<p>find / -size +20k -a -size -50k -exec ls -lh {} \;</p>
+<p>常用目录:/etc/sysconfig/network-scripts/ifcfg-eth0  网卡配置</p>
+<p>/etc/resolv.conf  DNS配置</p>
+<p>下面是linux系统约定不同类型文件默认的颜色：<br>白色：表示普通文件<br>蓝色：表示目录<br>绿色：表示可执行文件<br>红色：表示压缩文件<br>浅蓝色：链接文件<br>红色闪烁：表示链接的文件有问题<br>黄色：表示设备文件</p>
+<p>tar -zcvf a.tar.gz a</p>
+<p>挂载光盘：mount /dev/sr0 /mnt/cd/</p>
+<p>查看分区表：fdisk -l</p>
+<p>挂载U盘：mount /dev/sdb1 /mnt/usb/</p>
+<p>卸载文件系统：umount /mnt/cd</p>
+<p>用户登录查看命令：w who last lastlog</p>
+<p>! history ID 可以执行对应的历史命令</p>
+<p>! history string 可以执行对应的最后一条历史命令</p>
+<p>Ctrl + r 查找历史命令</p>
+<p>ll &amp;&gt;&gt; 1.txt 无论正确错误都输出重定向</p>
+<p>netstat -an ; route -n ; nslookup ;</p>
+<p>tcpdump -i ens33 -nnX port 80  截获数据包</p>
+<p>scp stx@192.168.164.137:/home/stx/t.txt ~   scp命令使用ssh来下载上传文件</p>
+<p>ifup enp0s3(网卡名)  用于激活指定的网络接口。</p>
+<p>命令结尾\，可以换行输入</p>
+<p>source conf = . conf</p>
+<p>目录权限只有0  5  7有用，其它无意义</p>
+<p>pkill 进程名 ，杀死一组进程</p>
+<p>jobs查看后台运行的进程</p>
+<p>fg 工作号，可以恢复后台的进程到前台</p>
+<p>nohup ./bin/node server.js &amp;  守护进程</p>
+<p>cat /proc/cpuinfo   查看CPU信息  uname -a查看系统相关信息</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2016/10/05/linux-e5-ad-a6-e4-b9-a0-e7-ac-94-e8-ae-b0/" data-id="cjbn28lpd001u3wnwrpi3alke" class="article-share-link">Teilen</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Linux/">Linux</a></li></ul>
+
+    </footer>
   </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2016/12/30/e6-88-91-e7-9a-84-2016-e5-b9-b4/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Neuer</strong>
+      <div class="article-nav-title">
+        
+          我的 2016 年
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2016/07/23/html5-canvas-e7-bb-98-e5-88-b6-e6-97-b6-e9-92-9f/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Älter</strong>
+      <div class="article-nav-title">HTML5 Canvas绘制时钟</div>
+    </a>
+  
+</nav>
+
+  
 </article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2017/12/25/hello-world/" class="archive-article-date">
-  <time datetime="2017-12-25T03:36:24.018Z" itemprop="datePublished">Dec 25</time>
-</a>
-      
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/12/25/hello-world/">Hello World</a>
-    </h1>
-  
-
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2017/09/09/e8-b0-b7-e6-ad-8c-e5-bc-80-e5-8f-91-e4-ba-ba-e5-91-98-e5-b7-a5-e5-85-b7-e5-ae-9e-e7-94-a8-e7-89-b9-e6-80-a7/" class="archive-article-date">
-  <time datetime="2017-09-09T02:10:34.000Z" itemprop="datePublished">Sep 9</time>
-</a>
-      
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/09/09/e8-b0-b7-e6-ad-8c-e5-bc-80-e5-8f-91-e4-ba-ba-e5-91-98-e5-b7-a5-e5-85-b7-e5-ae-9e-e7-94-a8-e7-89-b9-e6-80-a7/">谷歌浏览器开发人员工具实用特性</a>
-    </h1>
-  
-
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2017/04/01/e5-a4-a7-e5-ad-a6-e6-95-99-e8-82-b2-e7-9a-84-e5-a4-b1-e8-b4-a5-e5-af-bc-e8-87-b4-e5-a6-82-e4-bb-8a-e9-aa-97-e5-ad-90-e5-9f-b9-e8-ae-ad-e6-9c-ba-e6-9e-84-e6-a8-aa-e8-a1-8c/" class="archive-article-date">
-  <time datetime="2017-04-01T10:13:05.000Z" itemprop="datePublished">Apr 1</time>
-</a>
-      
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/04/01/e5-a4-a7-e5-ad-a6-e6-95-99-e8-82-b2-e7-9a-84-e5-a4-b1-e8-b4-a5-e5-af-bc-e8-87-b4-e5-a6-82-e4-bb-8a-e9-aa-97-e5-ad-90-e5-9f-b9-e8-ae-ad-e6-9c-ba-e6-9e-84-e6-a8-aa-e8-a1-8c/">大学教育的失败导致如今骗子培训机构横行</a>
-    </h1>
-  
-
-    </header>
-  </div>
-</article>
-  
-    
-    
-      
-        </div></section>
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2016" class="archive-year">2016</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2016/12/30/e6-88-91-e7-9a-84-2016-e5-b9-b4/" class="archive-article-date">
-  <time datetime="2016-12-30T10:57:36.000Z" itemprop="datePublished">Dec 30</time>
-</a>
-      
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2016/12/30/e6-88-91-e7-9a-84-2016-e5-b9-b4/">我的 2016 年</a>
-    </h1>
-  
-
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2016/10/05/linux-e5-ad-a6-e4-b9-a0-e7-ac-94-e8-ae-b0/" class="archive-article-date">
-  <time datetime="2016-10-05T02:29:06.000Z" itemprop="datePublished">Oct 5</time>
-</a>
-      
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2016/10/05/linux-e5-ad-a6-e4-b9-a0-e7-ac-94-e8-ae-b0/">Linux学习笔记</a>
-    </h1>
-  
-
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2016/07/23/html5-canvas-e7-bb-98-e5-88-b6-e6-97-b6-e9-92-9f/" class="archive-article-date">
-  <time datetime="2016-07-23T13:19:32.000Z" itemprop="datePublished">Jul 23</time>
-</a>
-      
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2016/07/23/html5-canvas-e7-bb-98-e5-88-b6-e6-97-b6-e9-92-9f/">HTML5 Canvas绘制时钟</a>
-    </h1>
-  
-
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2016/07/20/html5-canvas-e9-aa-8c-e8-af-81-e7-a0-81/" class="archive-article-date">
-  <time datetime="2016-07-20T04:39:31.000Z" itemprop="datePublished">Jul 20</time>
-</a>
-      
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2016/07/20/html5-canvas-e9-aa-8c-e8-af-81-e7-a0-81/">HTML5 Canvas验证码</a>
-    </h1>
-  
-
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2016/07/02/html5-server-sent-events-e5-ae-9e-e7-8e-b0-e8-81-8a-e5-a4-a9-e5-ae-a4-e5-ba-94-e7-94-a8/" class="archive-article-date">
-  <time datetime="2016-07-02T11:01:57.000Z" itemprop="datePublished">Jul 2</time>
-</a>
-      
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2016/07/02/html5-server-sent-events-e5-ae-9e-e7-8e-b0-e8-81-8a-e5-a4-a9-e5-ae-a4-e5-ba-94-e7-94-a8/">HTML5 Server-Sent Events聊天室</a>
-    </h1>
-  
-
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2016/06/23/e4-bd-bf-e7-94-a8-e7-99-be-e5-ba-a6url-e5-ae-9e-e7-8e-b0-e6-90-9c-e7-b4-a2-e5-bb-ba-e8-ae-ae/" class="archive-article-date">
-  <time datetime="2016-06-23T08:03:00.000Z" itemprop="datePublished">Jun 23</time>
-</a>
-      
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2016/06/23/e4-bd-bf-e7-94-a8-e7-99-be-e5-ba-a6url-e5-ae-9e-e7-8e-b0-e6-90-9c-e7-b4-a2-e5-bb-ba-e8-ae-ae/">使用百度URL实现搜索建议</a>
-    </h1>
-  
-
-    </header>
-  </div>
-</article>
-  
-  
-    </div></section>
-  
-
-
-  <nav id="page-nav">
-    
-    <span class="page-number current">1</span><a class="page-number" href="/archives/page/2/">2</a><a class="extend next" rel="next" href="/archives/page/2/">weiter &raquo;</a>
-  </nav>
 
 </section>
         
