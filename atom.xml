@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>梅天能－MyBlog</title>
+  
+  <subtitle>梅天能－MyBlog</subtitle>
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="http://yoursite.com/"/>
+  <updated>2017-12-28T03:03:28.226Z</updated>
+  <id>http://yoursite.com/</id>
+  
+  <author>
+    <name>梅天能</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Linux笔记</title>
+    <link href="http://yoursite.com/2016/10/05/linux-e5-ad-a6-e4-b9-a0-e7-ac-94-e8-ae-b0/"/>
+    <id>http://yoursite.com/2016/10/05/linux-e5-ad-a6-e4-b9-a0-e7-ac-94-e8-ae-b0/</id>
+    <published>2016-10-05T02:29:06.000Z</published>
+    <updated>2017-12-28T03:03:28.226Z</updated>
+    
+    <content type="html"><![CDATA[<p>VMware 使用桥接时，会占用局域网IP，NAT不会，host only不能连网</p><p>递归创建目录mkdir -p dir/b，rmdir并不怎么使用，删除目录使用rm -rf dir/</p><p>移动、重命名目录不需要额外的参数 mv</p><p>复制目录需要cp -r，如果需要连目录的修改时间等属性一起复制cp -a，复制出来的就会和源一模一样</p><p>不推荐使用硬链接，使用软链接时，必须使用绝对路径，windows的Documents and Settings和Users使用的应该是联接mklink /J link target</p><p>updatedb命令用于更新locate搜索的数据库，搜索规则的配置文件在/etc/updatedb.conf</p><p>find / -iname ab.txt</p><p>find / -mtime -10</p><p>find / -size 10M</p><p>find / -size +20k -a -size -50k -exec ls -lh {} \;</p><p>常用目录:/etc/sysconfig/network-scripts/ifcfg-eth0  网卡配置</p><p>/etc/resolv.conf  DNS配置</p><p>下面是linux系统约定不同类型文件默认的颜色：<br>白色：表示普通文件<br>蓝色：表示目录<br>绿色：表示可执行文件<br>红色：表示压缩文件<br>浅蓝色：链接文件<br>红色闪烁：表示链接的文件有问题<br>黄色：表示设备文件</p><p>tar -zcvf a.tar.gz a</p><p>挂载光盘：mount /dev/sr0 /mnt/cd/</p><p>查看分区表：fdisk -l</p><p>挂载U盘：mount /dev/sdb1 /mnt/usb/</p><p>卸载文件系统：umount /mnt/cd</p><p>用户登录查看命令：w who last lastlog</p><p>! history ID 可以执行对应的历史命令</p><p>! history string 可以执行对应的最后一条历史命令</p><p>Ctrl + r 查找历史命令</p><p>ll &amp;&gt;&gt; 1.txt 无论正确错误都输出重定向</p><p>netstat -an ; route -n ; nslookup ;</p><p>tcpdump -i ens33 -nnX port 80  截获数据包</p><p>scp stx@192.168.164.137:/home/stx/t.txt ~   scp命令使用ssh来下载上传文件</p><p>ifup enp0s3(网卡名)  用于激活指定的网络接口。</p><p>命令结尾\，可以换行输入</p><p>source conf = . conf</p><p>目录权限只有0  5  7有用，其它无意义</p><p>pkill 进程名 ，杀死一组进程</p><p>jobs查看后台运行的进程</p><p>fg 工作号，可以恢复后台的进程到前台</p><p>nohup ./bin/node server.js &amp;  守护进程</p><p>cat /proc/cpuinfo   查看CPU信息  uname -a查看系统相关信息</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;VMware 使用桥接时，会占用局域网IP，NAT不会，host only不能连网&lt;/p&gt;
+&lt;p&gt;递归创建目录mkdir -p dir/b，rmdir并不怎么使用，删除目录使用rm -rf dir/&lt;/p&gt;
+&lt;p&gt;移动、重命名目录不需要额外的参数 mv&lt;/p&gt;
+&lt;p&gt;复制目
+      
+    
+    </summary>
+    
+      <category term="日志" scheme="http://yoursite.com/categories/%E6%97%A5%E5%BF%97/"/>
+    
+    
+      <category term="Linux" scheme="http://yoursite.com/tags/Linux/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Hello World</title>
+    <link href="http://yoursite.com/2010/10/05/hello-world/"/>
+    <id>http://yoursite.com/2010/10/05/hello-world/</id>
+    <published>2010-10-05T02:29:06.000Z</published>
+    <updated>2017-12-28T03:03:05.143Z</updated>
+    
+    <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+</feed>
