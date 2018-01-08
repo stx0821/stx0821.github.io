@@ -5,8 +5,9 @@
     <entry>
       <title><![CDATA[Linux笔记]]></title>
       <url>/2016/10/05/linux-e5-ad-a6-e4-b9-a0-e7-ac-94-e8-ae-b0/</url>
-      <content type="html"><![CDATA[<p>VMware 使用桥接时，会占用局域网IP，NAT不会，host only不能连网<br><a id="more"></a><br>递归创建目录mkdir -p dir/b，rmdir并不怎么使用，删除目录使用rm -rf dir/</p>
-<p>移动、重命名目录不需要额外的参数 mv</p>
+      <content type="html"><![CDATA[<p>VMware 使用桥接时，会占用局域网IP，NAT不会，host only不能连网</p>
+<p>递归创建目录mkdir -p dir/b，rmdir并不怎么使用，删除目录使用rm -rf dir/</p>
+<p>移动、重命名目录不需要额外的参数 mv<br><a id="more"></a></p>
 <p>复制目录需要cp -r，如果需要连目录的修改时间等属性一起复制cp -a，复制出来的就会和源一模一样</p>
 <p>不推荐使用硬链接，使用软链接时，必须使用绝对路径，windows的Documents and Settings和Users使用的应该是联接mklink /J link target</p>
 <p>updatedb命令用于更新locate搜索的数据库，搜索规则的配置文件在/etc/updatedb.conf</p>
