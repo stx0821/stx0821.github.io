@@ -206,6 +206,9 @@ main {
   -ms-flex: 1 0 auto;
   flex: 1 0 auto;
 }
+#gitmentContainer nav {
+  background-color: transparent;
+}
 .red-link-context a {
   color: #f44336 !important;
 }
