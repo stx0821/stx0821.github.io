@@ -254,7 +254,21 @@
 
 
             </div>
-			
+			<div id="container"></div>
+			<link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
+			<script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
+			<script>
+			var gitment = new Gitment({
+			// id: '页面 ID', // 可选。默认为 location.href
+			owner: 'stx0821',
+			repo: 'https://github.com/stx0821/stx0821.github.io',
+			oauth: {
+				client_id: '478edc6db2e0453e1bcc',
+				client_secret: '90ac6ec057e1c566a1fd748f7f63a8ee87f4f80d',
+			},
+			})
+			gitment.render('container')
+			</script>
         </div>
     </div>
 </article>
