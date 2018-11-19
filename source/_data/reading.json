@@ -1,0 +1,56 @@
+{
+    "define": {
+	    "readed": "已读",
+        "reading": "在读",
+        "wanted": "想读"
+    },
+    "contents": {
+        "readed": [{
+            "title": "Node与Express开发",
+            "cover": "https://img3.doubanio.com/lpic/s27983630.jpg",
+            "review": "很不错的Node.js入门书籍",
+            "score": 8.5,
+            "doubanLink": "https://book.douban.com/subject/26301434/"
+        }, {
+            "title": "AngularJS权威教程",
+            "cover": "https://img3.doubanio.com/lpic/s27371732.jpg",
+            "review": "如果没接触过angular刚开始看有些内容会很费解,适合有基础的人看",
+            "score": 9,
+            "doubanLink": "https://book.douban.com/subject/25945442/"
+        }, {
+            "title": "图解HTTP",
+            "cover": "https://img3.doubanio.com/lpic/s27283822.jpg",
+            "review": "书很薄，但内容相当实用。",
+            "score": 8,
+            "doubanLink": "https://book.douban.com/subject/25863515/"
+        }, {
+            "title": "JavaScript高级程序设计（第3版）",
+            "cover": "https://img3.doubanio.com/lpic/s8958650.jpg",
+            "review": "这是一本前端人员的基础书，强烈推荐阅读，而且越早看受益越多！",
+            "score": 9,
+            "doubanLink": "https://book.douban.com/subject/10546125/"
+        }, {
+            "title": "ES6 标准入门（第2版）",
+            "cover": "https://img3.doubanio.com/lpic/s28383612.jpg",
+            "review": "虽然已经看过好几遍了,但想要真正完全理解还是得做Node.js开发才行",
+            "score": 9,
+            "doubanLink": "https://book.douban.com/subject/26708954/"
+        }],
+		
+		"reading": [{
+            "title": "Nginx高性能Web服务器详解",
+            "cover": "https://img3.doubanio.com/lpic/s27294106.jpg",
+            "review": "入门还行",
+            "score": 6,
+            "doubanLink": "https://book.douban.com/subject/25773187/"
+        }],
+
+        "wanted": [{
+            "title": "Angular权威教程",
+            "cover": "https://img3.doubanio.com/lpic/s29421954.jpg",
+            "review": "",
+            "score": null,
+            "doubanLink": "https://book.douban.com/subject/27016243/"
+        }]
+    }
+}

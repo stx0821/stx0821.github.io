@@ -1,0 +1,13 @@
+{
+    "avatar": "/images/45.gif_200.gif",
+    "name": "梅天能",
+	"tag": "Web前端/其它",
+    "desc": "谨言慎行，如履薄冰",
+    "skills": {
+        "JavaScript": 7,
+		"Node.js": 3,
+		"invisible-split-line-1": -1,
+		"Linux": 1
+    },
+    "projects": null
+}

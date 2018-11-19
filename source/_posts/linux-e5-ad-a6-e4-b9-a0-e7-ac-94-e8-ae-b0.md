@@ -1,0 +1,88 @@
+---
+title: Linux笔记
+tags:
+  - Linux
+id: 193
+categories:
+  - 日志
+date: 2016-10-05 10:29:06
+
+---
+
+VMware 使用桥接时，会占用局域网IP，NAT不会，host only不能连网
+
+递归创建目录mkdir -p dir/b，rmdir并不怎么使用，删除目录使用rm -rf dir/
+
+移动、重命名目录不需要额外的参数 mv
+<!--more-->
+
+复制目录需要cp -r，如果需要连目录的修改时间等属性一起复制cp -a，复制出来的就会和源一模一样
+
+不推荐使用硬链接，使用软链接时，必须使用绝对路径，windows的Documents and Settings和Users使用的应该是联接mklink /J link target
+
+updatedb命令用于更新locate搜索的数据库，搜索规则的配置文件在/etc/updatedb.conf
+
+find / -iname ab.txt
+
+find / -mtime -10
+
+find / -size 10M
+
+find / -size +20k -a -size -50k -exec ls -lh {} \;
+
+常用目录:/etc/sysconfig/network-scripts/ifcfg-eth0  网卡配置
+
+/etc/resolv.conf  DNS配置
+
+下面是linux系统约定不同类型文件默认的颜色：
+白色：表示普通文件
+蓝色：表示目录
+绿色：表示可执行文件
+红色：表示压缩文件
+浅蓝色：链接文件
+红色闪烁：表示链接的文件有问题
+黄色：表示设备文件
+
+tar -zcvf a.tar.gz a
+
+挂载光盘：mount /dev/sr0 /mnt/cd/
+
+查看分区表：fdisk -l
+
+挂载U盘：mount /dev/sdb1 /mnt/usb/
+
+卸载文件系统：umount /mnt/cd
+
+用户登录查看命令：w who last lastlog
+
+! history ID 可以执行对应的历史命令
+
+! history string 可以执行对应的最后一条历史命令
+
+Ctrl + r 查找历史命令
+
+ll &amp;&gt;&gt; 1.txt 无论正确错误都输出重定向
+
+netstat -an ; route -n ; nslookup ;
+
+tcpdump -i ens33 -nnX port 80  截获数据包
+
+scp stx@192.168.164.137:/home/stx/t.txt ~   scp命令使用ssh来下载上传文件
+
+ifup enp0s3(网卡名)  用于激活指定的网络接口。
+
+命令结尾\，可以换行输入
+
+source conf = . conf
+
+目录权限只有0  5  7有用，其它无意义
+
+pkill 进程名 ，杀死一组进程
+
+jobs查看后台运行的进程
+
+fg 工作号，可以恢复后台的进程到前台
+
+nohup ./bin/node server.js &amp;  守护进程
+
+cat /proc/cpuinfo   查看CPU信息  uname -a查看系统相关信息
