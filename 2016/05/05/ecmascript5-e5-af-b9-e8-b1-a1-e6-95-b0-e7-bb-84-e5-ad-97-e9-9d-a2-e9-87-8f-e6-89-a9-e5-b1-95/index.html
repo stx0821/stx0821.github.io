@@ -267,9 +267,10 @@
 <li>Setter accessors 设置访问器</li>
 <li>Trailing commas in object literals 对象字面量最后一个属性后面允许出现逗号</li>
 <li>Trailing commas in array literals 数组字面量最后一个值后面允许出现逗号</li>
-<li>Reserved words as property names 对象属性名可以使用保留字、关键字</li>
+<li>Reserved words as property names 对象属性名可以使用保留字、关键字<a id="more"></a>
+<h2 id="1-get-amp-set-访问器"><a href="#1-get-amp-set-访问器" class="headerlink" title="1.get&amp;set 访问器"></a>1.get&amp;set 访问器</h2></li>
 </ol>
-<h2 id="1-get-amp-set-访问器"><a href="#1-get-amp-set-访问器" class="headerlink" title="1.get&amp;set 访问器"></a>1.get&amp;set 访问器</h2><p>get&amp;set 一种获得属性值的方法，另一种设置属性值的方法，并且有自己的使用语法，可以对属性值进行预处理。</p>
+<p>get&amp;set 一种获得属性值的方法，另一种设置属性值的方法，并且有自己的使用语法，可以对属性值进行预处理。</p>
 <pre>var employee = {
     set age(s){ //有且只能传递一个参数
         this._age = parseInt(s); //将字符串转换成整数

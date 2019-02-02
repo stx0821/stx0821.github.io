@@ -5,7 +5,7 @@
     <entry>
       <title><![CDATA[谷歌浏览器开发人员工具实用特性]]></title>
       <url>/2017/09/09/e8-b0-b7-e6-ad-8c-e5-bc-80-e5-8f-91-e4-ba-ba-e5-91-98-e5-b7-a5-e5-85-b7-e5-ae-9e-e7-94-a8-e7-89-b9-e6-80-a7/</url>
-      <content type="html"><![CDATA[<p>今天去<a href="https://developers.google.com/web/tools/" target="_blank" rel="noopener">https://developers.google.com/web/tools/</a> （需翻墙）重新学习了一下谷歌浏览器开发人员工具的使用，才发现原来有那么多好东西平时都没注意到，今天特别记录下。（本文图片需翻墙才能看到。）</p>
+      <content type="html"><![CDATA[<p>今天去<a href="https://developers.google.com/web/tools/" target="_blank" rel="noopener">https://developers.google.com/web/tools/</a> （需翻墙）重新学习了一下谷歌浏览器开发人员工具的使用，才发现原来有那么多好东西平时都没注意到，今天特别记录下。（本文图片需翻墙才能看到。）<br><a id="more"></a></p>
 <h1 id="运行代码段"><a href="#运行代码段" class="headerlink" title="运行代码段"></a>运行代码段</h1><p>要创建代码段，请打开 <strong>Sources</strong> 面板，点击 <strong>Snippets</strong> 标签，在导航器中点击右键，然后选择 <strong>New</strong>。</p>
 <p><img src="https://developers.google.com/web/tools/chrome-devtools/images/create-snippet.png" alt="创建代码段"></p>
 <p>在编辑器中输入您的代码。如果您未保存更改，您的脚本名称旁会有一个星号，如下面的屏幕截图所示。请按 <kbd>Command</kbd>+<kbd>S</kbd>(Mac) 或 <kbd>Ctrl</kbd>+<kbd>S</kbd> （Windows、Linux）以保存您的更改。</p>
@@ -114,7 +114,7 @@
     <entry>
       <title><![CDATA[JavaScript 匿名函数自执行的写法与探究]]></title>
       <url>/2016/06/07/javascript-e5-8c-bf-e5-90-8d-e5-87-bd-e6-95-b0-e8-87-aa-e6-89-a7-e8-a1-8c-e7-9a-84-e5-86-99-e6-b3-95-e4-b8-8e-e6-8e-a2-e7-a9-b6/</url>
-      <content type="html"><![CDATA[<p>首先是正常的匿名函数自执行写法，也是最为常见的写法。</p>
+      <content type="html"><![CDATA[<p>首先是正常的匿名函数自执行写法，也是最为常见的写法。<br><a id="more"></a></p>
 <pre>(function(){
     alert(1);
 })();
@@ -189,9 +189,10 @@ typeof function(){
 <li>Setter accessors 设置访问器</li>
 <li>Trailing commas in object literals 对象字面量最后一个属性后面允许出现逗号</li>
 <li>Trailing commas in array literals 数组字面量最后一个值后面允许出现逗号</li>
-<li>Reserved words as property names 对象属性名可以使用保留字、关键字</li>
+<li>Reserved words as property names 对象属性名可以使用保留字、关键字<a id="more"></a>
+<h2 id="1-get-amp-set-访问器"><a href="#1-get-amp-set-访问器" class="headerlink" title="1.get&amp;set 访问器"></a>1.get&amp;set 访问器</h2></li>
 </ol>
-<h2 id="1-get-amp-set-访问器"><a href="#1-get-amp-set-访问器" class="headerlink" title="1.get&amp;set 访问器"></a>1.get&amp;set 访问器</h2><p>get&amp;set 一种获得属性值的方法，另一种设置属性值的方法，并且有自己的使用语法，可以对属性值进行预处理。</p>
+<p>get&amp;set 一种获得属性值的方法，另一种设置属性值的方法，并且有自己的使用语法，可以对属性值进行预处理。</p>
 <pre>var employee = {
     set age(s){ //有且只能传递一个参数
         this._age = parseInt(s); //将字符串转换成整数
@@ -246,8 +247,8 @@ console.log(employee.age); //返回数字24
     <entry>
       <title><![CDATA[HTML5 pattern属性是否需要^和$强制开头与结尾]]></title>
       <url>/2016/05/03/html5-pattern-e5-b1-9e-e6-80-a7-e6-98-af-e5-90-a6-e9-9c-80-e8-a6-81-e5-92-8c-e5-bc-ba-e5-88-b6-e5-bc-80-e5-a4-b4-e4-b8-8e-e7-bb-93-e5-b0-be/</url>
-      <content type="html"><![CDATA[<p>近日在写一个手机号文本输入框时，用pattern属性验证手机号是否正确发现一个细节，pattern属性里的正则表达式和编程语言里的相比，是不需要使用^和$强制开头与结尾。即使你不写^和$，浏览器在解释时，也会隐式的在开头和结尾加上，就像：<code>^(?:your pattern)$</code>这样。<br>所以下面两行代码是完全等价的。</p>
-<p><pre>&lt;input type=”tel” name=”tel” pattern=”1[34578]\d{9}” title=”11位手机号码” required /&gt;<br>&lt;input type=”tel” name=”tel” pattern=”^1[34578]\d{9}$” title=”11位手机号码” required /&gt;<br></pre><br><a id="more"></a><br>值得一提的是<code>type=&quot;tel&quot;</code>不像<code>type=&quot;email&quot;</code>和<code>type=&quot;number&quot;</code>具有验证功能，这是W3C规定的，因为考虑到全世界类型繁多的电话号难以统一。所以在电脑上<code>type=&quot;tel&quot;</code>的效果和普通文本框没什么区别，但其实是支持<code>type=&quot;tel&quot;</code>的，如果在手机上会调出数字键盘，方便输入。<br>参考资料：<a href="https://www.w3.org/TR/2014/REC-html5-20141028/forms.html#attr-input-pattern" target="_blank" rel="noopener">https://www.w3.org/TR/2014/REC-html5-20141028/forms.html#attr-input-pattern</a></p>
+      <content type="html"><![CDATA[<p>近日在写一个手机号文本输入框时，用pattern属性验证手机号是否正确发现一个细节，pattern属性里的正则表达式和编程语言里的相比，是不需要使用^和$强制开头与结尾。即使你不写^和$，浏览器在解释时，也会隐式的在开头和结尾加上，就像：<code>^(?:your pattern)$</code>这样。<br>所以下面两行代码是完全等价的。<br><a id="more"></a></p>
+<p><pre>&lt;input type=”tel” name=”tel” pattern=”1[34578]\d{9}” title=”11位手机号码” required /&gt;<br>&lt;input type=”tel” name=”tel” pattern=”^1[34578]\d{9}$” title=”11位手机号码” required /&gt;<br></pre><br>值得一提的是<code>type=&quot;tel&quot;</code>不像<code>type=&quot;email&quot;</code>和<code>type=&quot;number&quot;</code>具有验证功能，这是W3C规定的，因为考虑到全世界类型繁多的电话号难以统一。所以在电脑上<code>type=&quot;tel&quot;</code>的效果和普通文本框没什么区别，但其实是支持<code>type=&quot;tel&quot;</code>的，如果在手机上会调出数字键盘，方便输入。<br>参考资料：<a href="https://www.w3.org/TR/2014/REC-html5-20141028/forms.html#attr-input-pattern" target="_blank" rel="noopener">https://www.w3.org/TR/2014/REC-html5-20141028/forms.html#attr-input-pattern</a></p>
 ]]></content>
       
         <categories>
@@ -268,8 +269,7 @@ console.log(employee.age); //返回数字24
     <entry>
       <title><![CDATA[JavaScript 进行浮点运算的一个“bug”]]></title>
       <url>/2016/03/21/javascript-e8-bf-9b-e8-a1-8c-e6-b5-ae-e7-82-b9-e8-bf-90-e7-ae-97-e7-9a-84-e4-b8-80-e4-b8-aabug/</url>
-      <content type="html"><![CDATA[<p>可能是平时用javascript不怎么做浮点运算的原因，这么明显的运算结果出错居然一直没发现过。</p>
-<p><a href="http://www.mddup.com/wp-content/uploads/2016/03/2016-03-21_102705.png" target="_blank" rel="noopener"><img src="http://www.mddup.com/wp-content/uploads/2016/03/2016-03-21_102705.png" alt="2016-03-21_102705"></a></p>
+      <content type="html"><![CDATA[<p>可能是平时用javascript不怎么做浮点运算的原因，这么明显的运算结果出错居然一直没发现过。<br><a id="more"></a><br><a href="http://www.mddup.com/wp-content/uploads/2016/03/2016-03-21_102705.png" target="_blank" rel="noopener"><img src="http://www.mddup.com/wp-content/uploads/2016/03/2016-03-21_102705.png" alt="2016-03-21_102705"></a></p>
 <p>很难想像，这种小学生都会的小数运算减法，计算机居然会出错。</p>
 <p>究其原因，计算机在做整数运算时是不会出错的，但一碰到小数有时候就懵了（可能是因为十进制小数不能很好转换成二进制），具体资料可以参见：<a href="http://baike.baidu.com/view/1698149.htm?fromtitle=IEEE754%E6%A0%87%E5%87%86&amp;fromid=10427270&amp;type=syn" title="IEEE754%E6%A0%87%E5%87%86&amp;fromid=10427270&amp;type=syn" target="_blank" rel="noopener">IEEE754标准</a>。</p>
 <p>所以以后尽量避免使用浮点进行运算，减少不必要的麻烦。</p>
