@@ -7,7 +7,7 @@
 
     
 
-    <title>关于 | 梅天能のノート</title>
+    <title>JavaScript 匿名函数自执行的写法与探究 | 梅天能のノート</title>
     <meta name="author" content="梅天能">
     
     <meta name="description" content="江西上饶铅山梅天能的个人网站。">
@@ -15,7 +15,7 @@
     
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-    <meta property="og:title" content="关于"/>
+    <meta property="og:title" content="JavaScript 匿名函数自执行的写法与探究"/>
     <meta property="og:site_name" content="梅天能のノート"/>
 
     
@@ -208,171 +208,139 @@
 
 
     <main>
+        <div class="container main-container">
+    <nav class="page-nav hide-on-small-only">
+    <div class="nav-wrapper indigo">
+        <span class="breadcrumb">当前位置（分类目录）</span>
+        
+            
+    
+    
+    <a class="breadcrumb" href="/categories/WEB技术/">WEB技术</a>
+
+
         
 
+        
+    </div>
+</nav>
 
-<div class="container main-container">
-    <div class="card about-page row">
-        <div class="header indigo">
-            <div class="avatar-wrapper center-align">
-                <img class="avatar-image circle responsive-img" src="/images/45.gif_200.gif" alt="User Avatar">
+<article>
+    <div class="card">
+        <div class="card-content">
+            
+
+            <div class="article-title">
+                
+    
+        <h1>JavaScript 匿名函数自执行的写法与探究</h1>
+    
+
+
             </div>
-            <div class="info center-align">
-                <p class="name">梅天能</p>
-                <p class="desc">谨言慎行，如履薄冰</p>
-            </div>
+            <time class="pink-link-context" datetime="2016-06-07T14:58:58.000Z"><a href="/2016/06/07/javascript-e5-8c-bf-e5-90-8d-e5-87-bd-e6-95-b0-e8-87-aa-e6-89-a7-e8-a1-8c-e7-9a-84-e5-86-99-e6-b3-95-e4-b8-8e-e6-8e-a2-e7-a9-b6/">2016-06-07</a></time>
+
+            <span id="busuanzi_container_page_pv" class="read-times-container">
+    <i class="fa fa-eye"></i>
+    <span id="busuanzi_value_page_pv"></span>
+</span>
 
             
-                <div class="social-group center-align">
-                    
-                        <a class="social-link" href="#" target="_blank">
-                            <i class="fa fa-2x fa-weibo"></i>
-                        </a>
-                    
-                        <a class="social-link" href="https://github.com/stx0821" target="_blank">
-                            <i class="fa fa-2x fa-github"></i>
-                        </a>
-                    
-                        <a class="social-link" href="/atom.xml" target="_blank">
-                            <i class="fa fa-2x fa-rss"></i>
-                        </a>
-                    
-                </div>
-            
-        </div>
-
-        <article>
-            <div class="card-content">
-                <section class="about-me">
-                    <h1 class="indigo-text">
-                        <i class="fa fa-street-view"></i>关于</h1>
-                    <div class="entry pink-link-context">
-                        <!-- 大家好，我是XXX。欢迎来到我的个人技术博客。
-
-这里用markdown写下你的简介，就跟平时写md一样就可以了。 -->
-<!-- ### 基本信息
-
-*   年龄：90后
-*   原居：江西上饶铅山
-*   现居：江西南昌 -->
-<!-- ちょっと待っててね。。。 -->
-<p>大家好，我是梅天能。欢迎来到我的个人技术博客。</p>
-
-                    </div>
-                </section>
-
-                
-                <section class="skills">
-                    <h1 class="indigo-text">
-                        <i class="fa fa-tasks"></i>&nbsp;技能</h1>
-                    <ul class="skill-list">
-                        
-                            
-                                <li class="row">
-                                    <div class="col s4 m3 l2">JavaScript</div>
-                                    <div class="col s8 m9 l10">
-                                        
-                                            <i class="fa fa-star"></i>
-                                        
-                                            <i class="fa fa-star"></i>
-                                        
-                                            <i class="fa fa-star"></i>
-                                        
-                                            <i class="fa fa-star"></i>
-                                        
-                                            <i class="fa fa-star"></i>
-                                        
-                                            <i class="fa fa-star"></i>
-                                        
-                                            <i class="fa fa-star"></i>
-                                        
-                                        
-                                            <i class="fa fa-star-o"></i>
-                                        
-                                            <i class="fa fa-star-o"></i>
-                                        
-                                            <i class="fa fa-star-o"></i>
-                                        
-                                    </div>
-                                </li>
-                            
-                        
-                            
-                                <li class="row">
-                                    <div class="col s4 m3 l2">Node.js</div>
-                                    <div class="col s8 m9 l10">
-                                        
-                                            <i class="fa fa-star"></i>
-                                        
-                                            <i class="fa fa-star"></i>
-                                        
-                                            <i class="fa fa-star"></i>
-                                        
-                                        
-                                            <i class="fa fa-star-o"></i>
-                                        
-                                            <i class="fa fa-star-o"></i>
-                                        
-                                            <i class="fa fa-star-o"></i>
-                                        
-                                            <i class="fa fa-star-o"></i>
-                                        
-                                            <i class="fa fa-star-o"></i>
-                                        
-                                            <i class="fa fa-star-o"></i>
-                                        
-                                            <i class="fa fa-star-o"></i>
-                                        
-                                    </div>
-                                </li>
-                            
-                        
-                            
-                                <li>&nbsp;</li>
-                            
-                        
-                            
-                                <li class="row">
-                                    <div class="col s4 m3 l2">Linux</div>
-                                    <div class="col s8 m9 l10">
-                                        
-                                            <i class="fa fa-star"></i>
-                                        
-                                        
-                                            <i class="fa fa-star-o"></i>
-                                        
-                                            <i class="fa fa-star-o"></i>
-                                        
-                                            <i class="fa fa-star-o"></i>
-                                        
-                                            <i class="fa fa-star-o"></i>
-                                        
-                                            <i class="fa fa-star-o"></i>
-                                        
-                                            <i class="fa fa-star-o"></i>
-                                        
-                                            <i class="fa fa-star-o"></i>
-                                        
-                                            <i class="fa fa-star-o"></i>
-                                        
-                                            <i class="fa fa-star-o"></i>
-                                        
-                                    </div>
-                                </li>
-                            
-                        
-                    </ul>
-                </section>
-                
-
-                
-
-                
-            </div>
-        </article>
+    <div class="tags-row">
+        
+            <a href="/tags/JavaScript/" class="chip pink lighten-1">JavaScript</a>
+        
     </div>
 
+
+            <div class="toc pink-link-context hide-on-med-and-down">
     
+</div>
+
+
+            <div class="entry pink-link-context">
+                <p>首先是正常的匿名函数自执行写法，也是最为常见的写法。</p>
+<pre>(function(){
+    alert(1);
+})();
+</pre>
+还有通过各种运算符来将函数表达式执行并返回的，当然也可以不返回，函数照样执行。
+<pre>!function(){
+    alert(1);
+}();
+
+-function(){
+    return 1;
+}();
+
+typeof function(){
+    return 1;
+}();
+
+1 &amp;&amp; function(){
+    return 1;
+}();
+</pre>
+下面这种写法则是在最外层包了个`()`，这里的`()`是提升优先级，虽然只有一个表达式，但是加上`()`也不会有什么错，而且达到了自执行的效果。
+<pre>(function(){
+    alert(1);
+}());
+</pre>
+下面这种更让人感觉疑惑，最外层包了个`[]`，看起来就像是一个没有被赋值的数组字面量，居然也自我执行了。不错，确实数组字面量，数组字面量里要求填入的就是合法表达式（包括字面量、基本数据类型等等）。
+<pre>[function(){
+    alert(1);
+}()];
+</pre>
+**总结：通过以上探究，我们会发现`function(){}()`直接写肯定会报错，浏览器并不会把它当一个表达式执行，但如果是当它处在其它表达式的位置的时候就不会报错，而且函数会自我执行。**
+
+一个实际的例子。
+<pre>var currentDate = {
+    date:(function(){
+        var d = new Date();
+        return d.getDate();
+    })()
+};
+</pre>
+根据之前的总结，只要`function(){}()`是处在表达式的位置上，就不会报错而且会自执行，所以改写成如下，直接去掉`()`。
+<pre>var currentDate = {
+    date:function(){
+        var d = new Date();
+        return d.getDate();
+    }()
+};
+</pre>
+                
+<p class="pink-link-context">
+    <a href="/2016/10/05/linux-e5-ad-a6-e4-b9-a0-e7-ac-94-e8-ae-b0/" rel="next" title="Linux笔记">
+    上一篇：Linux笔记
+  </a>
+</p>
+
+
+
+
+            </div>
+			<div id="gitmentContainer"></div>
+			<link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
+			<script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
+			<script>
+			var gitment = new Gitment({
+			// id: '页面 ID', // 可选。默认为 location.href
+			owner: 'stx0821',
+			repo: 'stx0821.github.io',
+			oauth: {
+				client_id: '478edc6db2e0453e1bcc',
+				client_secret: '90ac6ec057e1c566a1fd748f7f63a8ee87f4f80d',
+			},
+			})
+			gitment.render('gitmentContainer')
+			</script>
+        </div>
+    </div>
+</article>
+
+
+
 
 
 
