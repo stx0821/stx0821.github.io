@@ -10,6 +10,7 @@ date: 2016-05-03 11:07:08
 
 近日在写一个手机号文本输入框时，用pattern属性验证手机号是否正确发现一个细节，pattern属性里的正则表达式和编程语言里的相比，是不需要使用^和$强制开头与结尾。即使你不写^和$，浏览器在解释时，也会隐式的在开头和结尾加上，就像：`^(?:your pattern)$`这样。
 所以下面两行代码是完全等价的。
+<!--more-->
 <pre>&lt;input type="tel" name="tel" pattern="1[34578]\d{9}" title="11位手机号码" required /&gt;
 &lt;input type="tel" name="tel" pattern="^1[34578]\d{9}$" title="11位手机号码" required /&gt;
 </pre>

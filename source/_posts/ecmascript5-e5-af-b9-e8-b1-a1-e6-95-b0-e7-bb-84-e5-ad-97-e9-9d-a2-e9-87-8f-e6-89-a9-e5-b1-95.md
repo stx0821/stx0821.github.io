@@ -16,7 +16,7 @@ ECMAscript5 对象&amp;数组字面量扩展 Object/array literal extensions如�
 3.  Trailing commas in object literals 对象字面量最后一个属性后面允许出现逗号
 4.  Trailing commas in array literals 数组字面量最后一个值后面允许出现逗号
 5.  Reserved words as property names 对象属性名可以使用保留字、关键字
-
+<!--more-->
 ## 1.get&amp;set 访问器
 
 get&amp;set 一种获得属性值的方法，另一种设置属性值的方法，并且有自己的使用语法，可以对属性值进行预处理。

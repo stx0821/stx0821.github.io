@@ -86,3 +86,7 @@ fg 工作号，可以恢复后台的进程到前台
 nohup ./bin/node server.js &amp;  守护进程
 
 cat /proc/cpuinfo   查看CPU信息  uname -a查看系统相关信息
+
+htop 高级进程查看
+
+rz sz 上传下载
