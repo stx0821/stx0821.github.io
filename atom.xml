@@ -139,9 +139,9 @@
     <link href="http://yoursite.com/2016/03/21/javascript-e8-bf-9b-e8-a1-8c-e6-b5-ae-e7-82-b9-e8-bf-90-e7-ae-97-e7-9a-84-e4-b8-80-e4-b8-aabug/"/>
     <id>http://yoursite.com/2016/03/21/javascript-e8-bf-9b-e8-a1-8c-e6-b5-ae-e7-82-b9-e8-bf-90-e7-ae-97-e7-9a-84-e4-b8-80-e4-b8-aabug/</id>
     <published>2016-03-21T02:55:11.000Z</published>
-    <updated>2019-02-02T10:35:07.310Z</updated>
+    <updated>2019-02-02T11:31:58.619Z</updated>
     
-    <content type="html"><![CDATA[<p>可能是平时用javascript不怎么做浮点运算的原因，这么明显的运算结果出错居然一直没发现过。<br><a id="more"></a><br><a href="http://www.mddup.com/wp-content/uploads/2016/03/2016-03-21_102705.png" target="_blank" rel="noopener"><img src="http://www.mddup.com/wp-content/uploads/2016/03/2016-03-21_102705.png" alt="2016-03-21_102705"></a></p><p>很难想像，这种小学生都会的小数运算减法，计算机居然会出错。</p><p>究其原因，计算机在做整数运算时是不会出错的，但一碰到小数有时候就懵了（可能是因为十进制小数不能很好转换成二进制），具体资料可以参见：<a href="http://baike.baidu.com/view/1698149.htm?fromtitle=IEEE754%E6%A0%87%E5%87%86&amp;fromid=10427270&amp;type=syn" title="IEEE754%E6%A0%87%E5%87%86&amp;fromid=10427270&amp;type=syn" target="_blank" rel="noopener">IEEE754标准</a>。</p><p>所以以后尽量避免使用浮点进行运算，减少不必要的麻烦。</p>]]></content>
+    <content type="html"><![CDATA[<p>可能是平时用javascript不怎么做浮点运算的原因，这么明显的运算结果出错居然一直没发现过。<br><a id="more"></a><br><a href="/images/2016-03-21_102705.png"><img src="/images/2016-03-21_102705.png" alt="2016-03-21_102705"></a></p><p>很难想像，这种小学生都会的小数运算减法，计算机居然会出错。</p><p>究其原因，计算机在做整数运算时是不会出错的，但一碰到小数有时候就懵了（可能是因为十进制小数不能很好转换成二进制），具体资料可以参见：<a href="http://baike.baidu.com/view/1698149.htm?fromtitle=IEEE754%E6%A0%87%E5%87%86&amp;fromid=10427270&amp;type=syn" title="IEEE754%E6%A0%87%E5%87%86&amp;fromid=10427270&amp;type=syn" target="_blank" rel="noopener">IEEE754标准</a>。</p><p>所以以后尽量避免使用浮点进行运算，减少不必要的麻烦。</p>]]></content>
     
     <summary type="html">
     
