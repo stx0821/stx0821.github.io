@@ -4,7 +4,7 @@ tags:
   - Linux
 id: 193
 categories:
-  - 日志
+  - 笔记
 date: 2016-10-05 10:29:06
 
 ---
