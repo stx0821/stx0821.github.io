@@ -2,8 +2,13 @@
   "name": "hexo-site",
   "version": "0.0.0",
   "private": true,
+  "scripts": {
+    "start": "hexo generate -d",
+    "s": "hexo deploy -g",
+    "new": "hexo new [layout] <title>"
+  },
   "hexo": {
-    "version": "3.8.0"
+    "version": "3.9.0"
   },
   "dependencies": {
     "hexo": "^3.2.0",
