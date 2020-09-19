@@ -5,6 +5,7 @@
   "scripts": {
     "start": "hexo generate -d",
     "s": "hexo deploy -g",
+    "server": "hexo server",
     "new": "hexo new [layout] <title>"
   },
   "hexo": {
