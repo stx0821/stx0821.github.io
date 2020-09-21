@@ -8,7 +8,7 @@ categories:
 ---
 
 ## 模板语法
-```
+```html
 <div [class.special]="isSpecial">Special</div>
 <button [style.color]="isSpecial ? 'red' : 'green'">
 <button [attr.aria-label]="help">help</button>
@@ -19,7 +19,7 @@ categories:
 
 NgStyle 指令可以作为 [style] 绑定的替代指令。但是，应该把上面这种 [style] 样式绑定语法作为首选，因为随着 Angular 中样式绑定的改进，NgStyle 将不再提供重要的价值，并最终在未来的某个版本中删除。
 
-```
+```html
 <button on-click="onSave($event)">on-click Save</button> = <button (click)="onSave($event)">Save</button>
 
 <input [value]="currentItem.name"
