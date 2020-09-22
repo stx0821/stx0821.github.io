@@ -25,9 +25,11 @@ NgStyle 指令可以作为 [style] 绑定的替代指令。但是，应该把上
 <input [value]="currentItem.name"
        (input)="currentItem.name=$event.target.value" >
 without NgModel
-```
 
 <input ref-fax placeholder="fax number" /> = <input #fax placeholder="fax number" />
+```
+
+要监视 @Input() 属性的更改，请使用 Angular 的生命周期钩子之一 OnChanges。OnChanges 是专门设计用于具有 @Input() 装饰器的属性的。欲知详情，请参见生命周期钩子指南的OnChanges部分。
 
 ## 
 
