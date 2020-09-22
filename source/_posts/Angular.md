@@ -26,7 +26,7 @@ NgStyle 指令可以作为 [style] 绑定的替代指令。但是，应该把上
 without NgModel
 
 
-
+<input ref-fax placeholder="fax number" /> = <input #fax placeholder="fax number" />
 
 ## 
 
