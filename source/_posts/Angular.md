@@ -31,14 +31,43 @@ without NgModel
 
 要监视 @Input() 属性的更改，请使用 Angular 的生命周期钩子之一 OnChanges。OnChanges 是专门设计用于具有 @Input() 装饰器的属性的。欲知详情，请参见生命周期钩子指南的OnChanges部分。
 
-## 
+
+```html
+类型转换函数 $any()
+有时候，绑定表达式可能会在 AOT 编译时报类型错误，并且它不能或很难指定类型。要消除这种报错，你可以使用 $any() 转换函数来把表达式转换成 any 类型，范例如下：
+
+<p>The item's undeclared best by date is: {{$any(item).bestByDate}}</p>
+当 Angular 编译器把模板转换成 TypeScript 代码时，$any 表达式可以防止 TypeScript 编译器在进行类型检查时报错说 bestByDate 不是 item 对象的成员。
+
+$any() 转换函数可以和 this 联合使用，以便访问组件中未声明过的成员。
+
+<p>The item's undeclared best by date is: {{$any(this).bestByDate}}</p>
+$any() 转换函数可以用在绑定表达式中任何可以进行方法调用的地方。
+```
+可以将 SVG 用作 Angular 中的有效模板
+
+## 用户输入
+
+```html
+<input #box (keyup)="0">
+<p>{{box.value}}</p>
+
+<input #box (keyup.enter)="onEnter(box.value)">
+<p>{{value}}</p>
+```
+
+## NgModules
+
+这些可声明的类在当前模块中是可见的，但是对其它模块中的组件是不可见的 —— 除非把它们从当前模块导出， 并让对方模块导入本模块。
+
+每个可声明对象都只能属于一个模块，所以只能把它声明在一个 @NgModule 中。当你需要在其它模块中使用它时，就要在那里导入包含这个可声明对象的模块。
+
+BrowserModule 的提供者是面向整个应用的，所以它只能在根模块中使用，而不是特性模块。
 
 
 
 
-
-
-
-
+## Angular问题笔记
+文档列表版本下拉选择出现不显示的bug，发现组件的versionSet如果一样就不更新，版本1.1设置成1.2不一样后就可以了
 
 
